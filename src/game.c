@@ -61,11 +61,11 @@ bool end_game(WINDOW *win) {
     do {
         choice = wgetch(win);
         if (choice == 'Q' || choice == 'q') {
-            endwin();  // Termina o modo ncurses
-            exit(0);  // Encerra o programa
+            endwin();  
+            exit(0);  
         }
     } while (choice != 'R' && choice != 'r');
 
     nodelay(win, TRUE);
-    return true;  // Retorna true se 'R' ou 'r' foi pressionado, indicando reinício do jogo
+    return true; 
 }

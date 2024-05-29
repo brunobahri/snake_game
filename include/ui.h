@@ -5,6 +5,6 @@
 #include <ncurses.h>
 
 void show_start_screen(WINDOW *win);
-void update_screen(const Game *game, WINDOW *game_win, WINDOW *score_win);  // Adicionado segundo WINDOW* para o score
+void update_screen(const Game *game, WINDOW *game_win, WINDOW *score_win); 
 
-#endif // UI_H
+#endif 

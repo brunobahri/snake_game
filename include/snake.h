@@ -4,14 +4,14 @@
 typedef struct {
     int x;
     int y;
-    char dir;  // Direção do segmento para desenho Unicode
+    char dir; 
 } Point;
 
 typedef struct {
     Point *body;
     int length;
     int capacity;
-    char direction;  // Direção geral da cobra
+    char direction;  
 } Snake;
 
 void init_snake(Snake *snake);

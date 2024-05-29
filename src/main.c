@@ -7,7 +7,7 @@
 #include "input.h"
 
 int main() {
-    initscr();  // Inicia o modo ncurses
+    initscr(); 
     cbreak();
     noecho();
     curs_set(FALSE);
@@ -24,7 +24,6 @@ int main() {
 
         game_window = newwin(GAME_HEIGHT, GAME_WIDTH, (LINES - GAME_HEIGHT) / 2, (COLS - GAME_WIDTH) / 2);
         score_window = newwin(3, GAME_WIDTH, (LINES - GAME_HEIGHT) / 2 - 3, (COLS - GAME_WIDTH) / 2);
-
         keypad(game_window, TRUE);
         nodelay(game_window, FALSE);
         show_start_screen(game_window);

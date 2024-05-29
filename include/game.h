@@ -6,10 +6,10 @@
 #include <ncurses.h>
 #include <stdbool.h>
 
-#define GAME_WIDTH 60  // Largura do jogo
-#define GAME_HEIGHT 20  // Altura do jogo
-#define HORIZONTAL_DELAY 60000  // Delay horizontal em microssegundos
-#define VERTICAL_DELAY 100000   // Delay vertical em microssegundos
+#define GAME_WIDTH 60 
+#define GAME_HEIGHT 20  
+#define HORIZONTAL_DELAY 60000  
+#define VERTICAL_DELAY 100000   
 
 typedef struct {
     Snake snake;
@@ -18,8 +18,8 @@ typedef struct {
 } Game;
 
 void init_game(Game *game);
-bool update_game(Game *game);  // Declarar como retornando bool.
-bool end_game(WINDOW *win);  // Declarar como retornando bool e aceitando um argumento WINDOW*.
+bool update_game(Game *game);  
+bool end_game(WINDOW *win);  
 int check_collision(Snake *snake);
 int check_food_collision(Snake *snake, Food *food);
 
