@@ -21,7 +21,6 @@ int main() {
             printf("Por favor, redimensione o terminal para pelo menos %dx%d e tente novamente.\n", GAME_WIDTH, GAME_HEIGHT + 3);
             return 1;
         }
-
         game_window = newwin(GAME_HEIGHT, GAME_WIDTH, (LINES - GAME_HEIGHT) / 2, (COLS - GAME_WIDTH) / 2);
         score_window = newwin(3, GAME_WIDTH, (LINES - GAME_HEIGHT) / 2 - 3, (COLS - GAME_WIDTH) / 2);
         keypad(game_window, TRUE);
