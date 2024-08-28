@@ -6,3 +6,4 @@
 void handle_game_input(Game *game, int ch, unsigned int *delay);
 
 #endif 
+
