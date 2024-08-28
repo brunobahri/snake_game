@@ -12,3 +12,4 @@
 EXTERN WINDOW *game_window; 
 
 #endif
+
