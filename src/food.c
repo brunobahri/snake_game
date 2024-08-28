@@ -19,3 +19,4 @@ void place_food(Food *food, Snake *snake, int max_width, int max_height) {
         }
     } while (isOnSnake); 
 }
+
